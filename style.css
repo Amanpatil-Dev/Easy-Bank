@@ -1,0 +1,395 @@
+body{
+    font-family: 'Public Sans', sans-serif;
+}
+.nav-link-custom a{
+    color: black;
+}
+.custom-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    position: relative;
+}
+.hidden{
+    display: none;
+}
+.nav-custom-items-links{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: teal;
+}
+.nav-custom-items-active{
+    position: absolute;
+    top: 240%;
+    right: 0;
+    z-index: 1;
+    background: white;
+    width: 100%;
+    border-radius: 12px;
+    padding: 2rem;
+    display: block;
+}
+ 
+.nav-link-custom{
+    margin-top: 1.5rem;
+    transition: all .25s ease-in-out;
+    
+}
+.hero{
+    overflow: hidden;
+    /* margin-bottom: 4rem; */
+    padding-bottom: 4rem;
+    background-color: #fafafa;
+}
+.hero-bg{
+    width: 100%;
+}
+.hero-bg-mobile{
+    position: absolute;
+    top: -18%;
+    right: 0;
+}
+
+.hero-col-img{
+    position: relative;
+}
+.hero-heading{
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+.hero-para{
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 50%;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.hero-btn{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    color: white;
+    background: linear-gradient(
+        90deg
+        , rgba(49,211,92,1) 18%, rgba(43,183,218,1) 93%);
+    display: block;
+    width: 50%;
+    margin: auto;
+    border-radius: 25px;
+    padding: .8rem .5rem .8rem .5rem;
+}
+.section-2{
+    padding: 1.2rem;
+    background-color: #f3f4f6;
+}
+.heading-section--2{
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.para-section--2{
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 50%;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.wrapper-1{
+    margin-top: 2rem;
+}
+.online{
+    text-align: center;
+}
+.wrapper-heading{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+
+}
+.wrapper-para{
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 50%;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.section-3{
+    
+    padding: 1.2rem;
+    background-color: #fafafa;
+
+}
+
+.heading-section--3{
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+.para-section--3{
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 50%;
+    text-transform: capitalize;
+    text-align: center;
+}
+.card{
+    width: 20rem;
+    margin: auto;
+    border: none;
+}
+.card-title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    opacity: 100%;
+    text-transform: capitalize;
+}
+.card-text{
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 90%;
+    text-transform: capitalize;
+}
+
+.footer{
+    background-color: hsl(233, 26%, 24%);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+ul{
+    list-style: none;
+    color: white;
+    text-align: center;
+    padding: 0;
+}
+.second{
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+
+}
+.nav-link-custom a:hover{
+    border-bottom: 2px solid teal;
+    padding-bottom: 1rem;
+}
+.btn:hover{
+    color: white;
+    opacity: 80%;
+}
+
+ul li{
+    text-transform: capitalize;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+.ftr-btn{
+    margin-top: 1.5rem;
+}
+.blockquote-footer{
+    margin-top: 1rem;
+    text-transform: capitalize;
+}
+.blockquote-footer::before{
+    display: none;
+}
+.ftr{
+    text-align: center;
+}
+
+.hero-desktop{
+    display: none;
+}
+
+.header-btn{
+    display: none;
+}
+.second li{
+    color: white;
+}
+.third li{
+    color: white;
+}
+.logo-svg{
+    margin-top: 12px;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+.social div{
+    margin-left: 1rem;
+}
+@media(min-width:768px){
+    .hero-col-img{
+        order: 2;
+    }
+    .hero-bg{
+        max-width: 110%;
+        width: 110%;
+    }
+    .hero-heading{
+        font-size: 2.5rem;
+        text-align: left;
+        margin-top: 2rem;
+    }
+    .hero-para{
+        text-align: left;
+    }
+    .hero-btn:not(.ftr-btn){
+        display: inline;
+    }
+    .second{
+        margin-top: 0;
+    }
+    .hero{
+        margin-bottom: 0;
+    }
+    .header-btn{
+        width: 103%;
+    }
+    .nav-custom-items{
+        display: block;
+        position: static;
+        padding: 0;
+        width: unset;
+    }
+    .nav-custom-items-links{
+        display: flex;
+    }
+    .responsive{
+        display: none;
+    }
+
+
+}
+
+@media(min-width:992px){
+    .hero-desktop{
+        display: block;
+        max-width: 150%;
+        position: relative;
+        top: -22%;
+        right: 4%;
+    }
+    .hero-bg-mobile{
+        position: absolute;
+        top: -15%;
+        right: -25%;
+        max-width: 110%;
+    }
+    .hero-bg{
+        display: none;
+    }
+    .custom-navbar{
+        position: relative;
+        z-index: 1;
+    }
+    .hero{
+        overflow: unset;
+        padding-bottom: 0;
+    }
+    header{
+        overflow: hidden;
+    }
+    .section-2{
+        margin-top: -12%;
+        padding-top: 7rem;
+    }
+    .card{
+        width: 25rem;
+    }
+    .hero-col-content{
+        padding: 2rem;
+    }
+    .hero-heading{
+        font-size: 2.9rem;
+    }
+    .section-2{
+        padding-left: 2rem;
+    }
+    .heading-section--2{
+        text-align: left;
+        font-size: 2.5rem;
+    }
+    .para-section--2{
+        width: 60%;
+        text-align: left;
+    }
+
+    
+}
+
+@media (min-width:1200px){
+    .section-2{
+        margin-top: -19%;
+        padding-bottom: 7rem;
+    }
+    .hero-content{
+        padding-top: 6rem;
+    }
+    .hero-heading{
+        /* font-weight: 600; */
+        font-size: 3rem;
+    }
+    .online{
+        text-align: left;
+        
+    }
+    .wrapper-heading{
+        text-align: left;
+    }
+    .wrapper-para{
+        text-align: left;
+    }
+    .card{
+        width: 17rem;
+    }
+    .heading-section--3{
+        text-align: left;
+    }
+}
+ ul{
+     list-style: none;
+     color: black;
+ }
+
+@media (min-width:1399px){
+    .card{
+        width: 19rem;
+    }
+
+    .hero-content{
+        padding-top: 2rem;
+    }.hero-heading{
+        font-size: 4rem;
+    }
+}
+
+@media (min-width:1470px){
+    .card{
+        width: 19rem;
+    }
+    .section-2{
+        margin-top: -15%;
+    }
+}
