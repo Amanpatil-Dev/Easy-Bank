@@ -363,9 +363,16 @@ ul li{
     }
     .card{
         width: 17rem;
+        padding: 0.6rem;
     }
     .heading-section--3{
         text-align: left;
+    }
+    .card-title{
+        font-size: 1rem;
+    }
+    .card-text{
+        font-size: 0.8rem;
     }
 }
  ul{
